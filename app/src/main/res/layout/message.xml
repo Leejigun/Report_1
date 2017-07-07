@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle_grey"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toLeftOf="@+id/news_textView"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_weight="1"
+        android:background="@color/colorFacebook_grey" />
+
+</LinearLayout>
